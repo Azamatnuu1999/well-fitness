@@ -1,0 +1,70 @@
+.nine{
+    .contain{
+        display: flex;
+        padding: 30px 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__h3{
+            width: 100%;
+            font-size: 24px;
+            font-weight: 800;
+        }
+        .card1{
+            width: 24%;
+            margin: 10px 0;
+            font-size: 13px;
+            .bottom{
+                padding-left: 0;
+                padding: 10px 5px;
+                h3{
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                li{
+                    display: flex;
+                    gap: 5px;
+                    border-bottom: 1px solid #e5e5e5;
+                    justify-content: space-between;
+                    b{
+                        font-weight: 400;
+                    }
+                    span{
+                        color: grey;
+                    }
+                }
+                li:first-child{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .nine{
+        .contain{
+            .card1{
+                width: 32%;
+            }
+        }
+    }
+}
+
+@media(max-width:730px){
+    .nine{
+        .contain{
+            .card1{
+                width: 49%;
+            }
+        }
+    }
+}
+@media(max-width:350px){
+    .nine{
+        .contain{
+            .card1{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,214 @@
+.third{
+    padding: 40px 0;
+    .contain{
+        &__ul{
+            display: flex;
+            gap: 12px;
+            li{
+                color: grey;
+                b{
+                    color: black;
+                }
+            }
+        }
+        &__button{
+            background-color: inherit;
+            color: red;
+            border: 1px solid red;
+            border-radius: 4px;
+            padding: 6px 12px;
+        }
+        &__button:hover{
+            background-color: red;
+            color: white;
+        }
+        .main{
+            .slider{
+                ul{
+                    li{
+                        width: 100%;
+                        background-color: #f7f7f7;
+                        display: flex;
+                        justify-content: space-between;
+                        .card1{
+                            margin: 20px 0;
+                            width: 19%;
+                            .img{
+                                width: 100%;
+                                position: relative;
+                                ul{
+                                    padding-left: 0;
+                                    margin-top: 0;
+                                    width: 95%;
+                                    position: absolute;
+                                    top: 10px;
+                                    left: 2.5%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    li{
+                                        width: 30%;
+                                        background-color: inherit;
+                                    }
+                                    li:last-child{
+                                        width: 20%;
+                                        background-color: white;
+                                    }
+                                }
+                            }
+                            .bottom{
+                                padding: 10px;
+                                a:first-child{
+                                    color: #2FC509;
+                                    font-size: 10px;
+                                }
+                                img{
+                                    width: 4px;
+                                }
+                                a:nth-child(2){
+                                    color: #4B7EE8;
+                                    font-size: 10px;
+                                }
+                                p{
+                                    margin: 2px 0;
+                                    font-size: 12px;
+                                }
+                                span{
+                                    font-size: 10px;
+                                }
+                                i{
+                                    font-size: 8px;
+                                    color: #F99808;
+                                }
+                                ul{
+                                    margin-top: 0;
+                                    padding-left: 0;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    li{
+                                        width: 49%;
+                                        font-size: 10px;
+                                        background-color: inherit;
+                                        del{
+                                            color: grey;
+                                        }
+                                        button{
+                                            align-items: flex-end;
+                                            width: 100%;
+                                            border: none;
+                                            padding: 4px 10px;
+                                            font-size: 12px;
+                                            background-color: red;
+                                            color: white;
+                                            border-radius: 5px;
+                                            border: 1px solid red;
+                                            img{
+                                                width: 10px;
+                                            }
+                                        }
+                                        button:hover{
+                                            background-color: $ochkok;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .card1:hover{
+                            box-shadow: 0 0 6px grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1100px){
+    .third{
+        .contain{
+            .main{
+                .slider{
+                    ul{
+                        li{
+                            overflow: hidden;
+                            .card1{
+                                width: 24%;
+                            }
+                            .card1:last-child{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    .third{
+        .contain{
+            .main{
+                .slider{
+                    ul{
+                        li{
+                            .card1{
+                                width: 33%;
+                            }
+                            .card1:nth-child(4){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:450px){
+    .third{
+        .contain{
+            .main{
+                .slider{
+                    ul{
+                        li{
+                            .card1{
+                                width: 48%;
+                            }
+                            .card1:nth-child(3){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:350px){
+    .third{
+        .contain{
+            &__ul{
+                font-size: 13px !important;
+            }
+            .main{
+                .slider{
+                    ul{
+                        li{
+                            overflow: hidden;
+                            .card1{
+                                width: 90%;
+                                margin: 20px auto;
+                            }
+                            .card1:nth-child(2){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.six{
+    .contain{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card1{
+            width: 24.7%;
+            text-align: center;
+            p{
+                font-size: 12px;
+            }
+            a{
+                font-size: 12px;
+                color: red;
+            }
+        }
+        .card1:nth-child(3){
+            background-color: red;
+            display: flex;
+            align-items: flex-end;
+            color: white;
+            a{
+                color: white;
+            }
+            img{
+                width: 40%;
+                height: 50%;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:900px){
+    .six{
+        .contain{
+            .card1{
+                width: 49.5%;
+                margin: 4px 0;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .six{
+        .contain{
+            .card1{
+                width: 100%;
+                margin: 4px 0;
+            }
+        }
+    }
+}

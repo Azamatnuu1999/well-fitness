@@ -1,0 +1,1091 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+*:hover {
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.contain {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 80%;
+}
+
+@media (max-width: 500px) {
+  .contain {
+    width: 96%;
+  }
+}
+body {
+  background-color: #f7f7f7;
+}
+
+.card1 {
+  background-color: white;
+}
+
+.card1:hover {
+  cursor: pointer;
+}
+
+header {
+  font-size: 14px;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1A1A25;
+  padding: 0 10%;
+  color: white;
+}
+header .navbar__logo {
+  width: 200px;
+}
+header .navbar__select {
+  width: 80px;
+  background-color: inherit;
+  color: white;
+  border: none;
+}
+header .navbar__right {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 300px);
+}
+header .navbar__right li {
+  width: fit-content;
+  display: flex;
+  gap: 12px;
+}
+header .navbar__right li button {
+  background-color: inherit;
+  background-color: #2A2C38;
+  border: none;
+  padding: 1px 10px;
+  color: white;
+  border-radius: 4px;
+}
+header .navbar__right li .red {
+  color: red;
+}
+header .navbar__res {
+  display: flex;
+  gap: 10px;
+  display: none;
+}
+header .navbar__check {
+  display: none;
+}
+header .navbar__responsive {
+  display: none;
+}
+header .navbar__check:checked ~ ul {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  top: 38px;
+  right: 10%;
+  background-color: #2A2C38;
+  padding: 10px 14px;
+}
+header .center {
+  padding: 0 10%;
+  background-color: #1A1A25;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  color: white;
+  align-items: flex-start;
+}
+header .center__button {
+  background-color: red;
+  border: 1px solid red;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+}
+header .center__button:hover {
+  color: red;
+  background-color: #2A2C38;
+}
+header .center__nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: calc(100% - 200px);
+}
+header .center__nav ul {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  gap: 10px;
+}
+header .center__nav ul .bars {
+  display: none;
+}
+header .bottom {
+  color: white;
+  padding: 0 10%;
+  background-color: #2A2C38;
+  margin-top: -20px;
+}
+header .bottom__ul {
+  display: flex;
+  gap: 12px;
+  padding-left: 0;
+}
+header .bottom__ul select {
+  background-color: inherit;
+  border: none;
+  color: white;
+  border-right: 1px solid grey;
+}
+header .bottom__ul select option {
+  background-color: #1A1A25;
+}
+header .showcase {
+  background-image: url(../media/photo_2022-09-18_10-16-54.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 30px 0;
+}
+header .showcase .contain .slider {
+  width: 100%;
+}
+header .showcase .contain .slider ul li {
+  width: 100%;
+}
+header .showcase .contain .slider ul li .text {
+  width: 300px;
+  margin: 70px auto 70px 0;
+}
+header .showcase .contain .slider ul li .text__h2 {
+  color: red;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 22px;
+  margin: 0;
+}
+header .showcase .contain .slider ul li .text__h1 {
+  margin: 5px 0;
+  font-size: 34px;
+  font-weight: 800;
+}
+header .showcase .contain .slider ul li .text__h1 span {
+  font-weight: 400;
+}
+header .showcase .contain .slider ul li .text__button {
+  background-color: inherit;
+  color: red;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+header .showcase .contain .slider ul li .text__button:hover {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  header .navbar {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  header .navbar__right {
+    display: none;
+  }
+  header .navbar__res {
+    display: flex;
+    margin-left: auto;
+    width: 230px;
+  }
+  header .navbar__res i {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  header .center {
+    display: none;
+  }
+  header .bottom {
+    margin-top: 0;
+  }
+}
+@media (max-width: 670px) {
+  header .navbar__logo {
+    width: 140px;
+  }
+  header .navbar__select {
+    display: none;
+  }
+  header .navbar__res {
+    align-items: flex-end;
+    width: 120px;
+  }
+  header .navbar__res .red {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  header .navbar .search {
+    display: none;
+  }
+  header .navbar__res {
+    width: 40px;
+  }
+  header .bottom {
+    font-size: 11px;
+  }
+}
+.second .contain__h2 {
+  font-weight: 800;
+  font-size: 24px;
+}
+.second .contain .main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.second .contain .main .left {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  height: 410px;
+}
+.second .contain .main .left .card1:first-child {
+  background-color: #2A2C38;
+  color: white;
+}
+.second .contain .main .left .card1 {
+  width: 48%;
+  border: 1px solid #e5e5e5;
+  position: relative;
+}
+.second .contain .main .left .card1__h3 {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+  top: 10px;
+  left: 10px;
+}
+.second .contain .main .left .card1 img {
+  margin-top: 10%;
+}
+.second .contain .main .left .card1:hover {
+  box-shadow: 0 0 5px grey;
+}
+.second .contain .main .left1 {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+}
+.second .contain .main .left1 .card1:first-child {
+  background-color: #2A2C38;
+  color: white;
+}
+.second .contain .main .left1 .card1 {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  position: relative;
+}
+.second .contain .main .left1 .card1__h3 {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+  top: 10px;
+  left: 10px;
+}
+.second .contain .main .left1 .card1 img {
+  margin-top: 10%;
+}
+.second .contain .main .left1 .card1:hover {
+  box-shadow: 0 0 5px grey;
+}
+.second .contain .main .right {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 400px;
+  gap: 10px 0;
+}
+.second .contain .main .right .card1 {
+  position: relative;
+  text-align: center;
+  height: 200px;
+  overflow: hidden;
+  width: 48%;
+  border: 1px solid #e5e5e5;
+}
+.second .contain .main .right .card1__h3 {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+  top: 10px;
+  left: 10px;
+}
+.second .contain .main .right .card1 img {
+  width: 70%;
+  margin: 20% 0 0 20%;
+}
+.second .contain .main .right .card1:hover {
+  box-shadow: 0 0 5px grey;
+}
+.second .contain .main .right1 {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 0;
+}
+.second .contain .main .right1 .card1 {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: 48%;
+  border: 1px solid #e5e5e5;
+}
+.second .contain .main .right1 .card1__h3 {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+  top: 10px;
+  left: 10px;
+}
+.second .contain .main .right1 .card1 img {
+  width: 70%;
+  margin: 20% 0 0 20%;
+}
+.second .contain .main .right1 .card1:hover {
+  box-shadow: 0 0 5px grey;
+}
+.second .contain .main .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.second .contain .main .bottom .card1 {
+  width: 23.5%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+}
+.second .contain .main .bottom .card1__h3 {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+  top: 10px;
+  left: 10px;
+}
+.second .contain .main .bottom .card1 img {
+  width: 70%;
+  margin: 20% 0 0 20%;
+}
+.second .contain .main .bottom .card1:hover {
+  box-shadow: 0 0 5px grey;
+}
+.second .contain__button {
+  background-color: inherit;
+  color: red;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.second .contain__button:hover {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .second .contain h3 {
+    font-size: 13px !important;
+  }
+  .second .contain .main .left {
+    height: 250px;
+  }
+  .second .contain .main .right {
+    height: 250px;
+  }
+  .second .contain .main .right .card1 {
+    height: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .second .contain h3 {
+    font-size: 10px !important;
+  }
+  .second .contain .main {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .second .contain .main .left1 {
+    width: 100%;
+  }
+  .second .contain .main .left1 h3 {
+    color: white;
+  }
+  .second .contain .main .right1 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .second .contain .main .right1 .card1 {
+    width: 49%;
+  }
+  .second .contain .main .left {
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .second .contain .main .left h3 {
+    color: white;
+  }
+  .second .contain .main .left .card1 {
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 0;
+  }
+  .second .contain .main .left .card1 img {
+    width: 40%;
+    margin-left: 60%;
+  }
+  .second .contain .main .left .card1:first-child {
+    color: white;
+  }
+  .second .contain .main .right {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    height: auto;
+  }
+  .second .contain .main .right .card1 {
+    width: 49%;
+    height: auto;
+  }
+  .second .contain .main .bottom .card1 {
+    width: 49%;
+    margin: 5px 0;
+  }
+}
+.third {
+  padding: 40px 0;
+}
+.third .contain__ul {
+  display: flex;
+  gap: 12px;
+}
+.third .contain__ul li {
+  color: grey;
+}
+.third .contain__ul li b {
+  color: black;
+}
+.third .contain__button {
+  background-color: inherit;
+  color: red;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.third .contain__button:hover {
+  background-color: red;
+  color: white;
+}
+.third .contain .main .slider ul li {
+  width: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+}
+.third .contain .main .slider ul li .card1 {
+  margin: 20px 0;
+  width: 19%;
+}
+.third .contain .main .slider ul li .card1 .img {
+  width: 100%;
+  position: relative;
+}
+.third .contain .main .slider ul li .card1 .img ul {
+  padding-left: 0;
+  margin-top: 0;
+  width: 95%;
+  position: absolute;
+  top: 10px;
+  left: 2.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.third .contain .main .slider ul li .card1 .img ul li {
+  width: 30%;
+  background-color: inherit;
+}
+.third .contain .main .slider ul li .card1 .img ul li:last-child {
+  width: 20%;
+  background-color: white;
+}
+.third .contain .main .slider ul li .card1 .bottom {
+  padding: 10px;
+}
+.third .contain .main .slider ul li .card1 .bottom a:first-child {
+  color: #2FC509;
+  font-size: 10px;
+}
+.third .contain .main .slider ul li .card1 .bottom img {
+  width: 4px;
+}
+.third .contain .main .slider ul li .card1 .bottom a:nth-child(2) {
+  color: #4B7EE8;
+  font-size: 10px;
+}
+.third .contain .main .slider ul li .card1 .bottom p {
+  margin: 2px 0;
+  font-size: 12px;
+}
+.third .contain .main .slider ul li .card1 .bottom span {
+  font-size: 10px;
+}
+.third .contain .main .slider ul li .card1 .bottom i {
+  font-size: 8px;
+  color: #F99808;
+}
+.third .contain .main .slider ul li .card1 .bottom ul {
+  margin-top: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.third .contain .main .slider ul li .card1 .bottom ul li {
+  width: 49%;
+  font-size: 10px;
+  background-color: inherit;
+}
+.third .contain .main .slider ul li .card1 .bottom ul li del {
+  color: grey;
+}
+.third .contain .main .slider ul li .card1 .bottom ul li button {
+  align-items: flex-end;
+  width: 100%;
+  border: none;
+  padding: 4px 10px;
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+.third .contain .main .slider ul li .card1 .bottom ul li button img {
+  width: 10px;
+}
+.third .contain .main .slider ul li .card1 .bottom ul li button:hover {
+  background-color: #2A2C38;
+  color: white;
+}
+.third .contain .main .slider ul li .card1:hover {
+  box-shadow: 0 0 6px grey;
+}
+
+@media (max-width: 1100px) {
+  .third .contain .main .slider ul li {
+    overflow: hidden;
+  }
+  .third .contain .main .slider ul li .card1 {
+    width: 24%;
+  }
+  .third .contain .main .slider ul li .card1:last-child {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .third .contain .main .slider ul li .card1 {
+    width: 33%;
+  }
+  .third .contain .main .slider ul li .card1:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .third .contain .main .slider ul li .card1 {
+    width: 48%;
+  }
+  .third .contain .main .slider ul li .card1:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  .third .contain__ul {
+    font-size: 13px !important;
+  }
+  .third .contain .main .slider ul li {
+    overflow: hidden;
+  }
+  .third .contain .main .slider ul li .card1 {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .third .contain .main .slider ul li .card1:nth-child(2) {
+    display: none;
+  }
+}
+.fourth {
+  background-color: #1A1A25;
+}
+.fourth .contain {
+  padding: 30px 0;
+}
+.fourth .contain__button {
+  background-color: inherit;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 20px 0 6px;
+  padding: 6px 12px;
+}
+.fourth .contain__button:hover {
+  background-color: white;
+  color: #1A1A25;
+}
+.fourth .contain__h3 {
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+}
+.fourth .contain .slider ul {
+  display: flex;
+  justify-content: space-between;
+}
+.fourth .contain .slider ul .left {
+  width: 49%;
+  height: 100%;
+}
+.fourth .contain .slider ul .card1 {
+  width: 23.5%;
+  height: 100%;
+  border-radius: 6px;
+}
+.fourth .contain .slider ul .left:hover, .fourth .contain .slider ul .card1:hover {
+  box-shadow: 0 0 6px white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .fourth .contain .slider ul {
+    gap: 20px;
+  }
+  .fourth .contain .slider ul .left {
+    width: 84%;
+  }
+  .fourth .contain .slider ul .card1 {
+    width: 40%;
+  }
+}
+.five .contain__h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.five .contain__ul {
+  display: flex;
+  gap: 12px;
+  padding-left: 0;
+  font-size: 13px;
+}
+.five .contain .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.five .contain .main .card1 {
+  width: 19.5%;
+  padding: 10px;
+  margin: 3px 0;
+  cursor: pointer;
+}
+.five .contain .main .card1:hover {
+  box-shadow: 0 0 9px grey;
+}
+.five .contain__button {
+  background-color: inherit;
+  color: red;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.five .contain__button:hover {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .five .contain__ul {
+    flex-wrap: wrap;
+  }
+  .five .contain .main .card1 {
+    width: 24.5%;
+  }
+  .five .contain .main .card1:nth-child(13), .five .contain .main .card1:nth-child(14), .five .contain .main .card1:nth-child(15) {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .five .contain .main .card1 {
+    width: 32.5%;
+  }
+}
+.six .contain {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.six .contain .card1 {
+  width: 24.7%;
+  text-align: center;
+}
+.six .contain .card1 p {
+  font-size: 12px;
+}
+.six .contain .card1 a {
+  font-size: 12px;
+  color: red;
+}
+.six .contain .card1:nth-child(3) {
+  background-color: red;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+}
+.six .contain .card1:nth-child(3) a {
+  color: white;
+}
+.six .contain .card1:nth-child(3) img {
+  width: 40%;
+  height: 50%;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .six .contain .card1 {
+    width: 49.5%;
+    margin: 4px 0;
+  }
+}
+@media (max-width: 600px) {
+  .six .contain .card1 {
+    width: 100%;
+    margin: 4px 0;
+  }
+}
+.seven {
+  background-image: url(../media/Group\ 719.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 60%;
+}
+.seven .contain {
+  margin-top: 30px;
+  color: #384255;
+}
+.seven .contain .left {
+  width: 40%;
+}
+.seven .contain .left__h4 {
+  margin: 10px 0 0 0;
+  font-weight: 800;
+}
+.seven .contain .left__h3 {
+  font-size: 24px;
+}
+.seven .contain .left__p {
+  font-size: 14px;
+}
+.seven .contain .left__button {
+  background-color: inherit;
+  color: red;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.seven .contain .left__button:hover {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .seven {
+    background-position: center bottom;
+    background-size: 80%;
+  }
+  .seven .contain .left {
+    width: 100%;
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .seven {
+    background-size: 100%;
+  }
+}
+.eight .contain {
+  background-color: #1A1A25;
+  padding: 30px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.eight .contain .left {
+  width: 30%;
+}
+.eight .contain .right {
+  width: 60%;
+}
+.eight .contain .right__h3 {
+  color: white;
+}
+.eight .contain .right__h3 span {
+  color: red;
+}
+.eight .contain .right__button {
+  background-color: inherit;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 20px 0 6px;
+  padding: 6px 12px;
+}
+.eight .contain .right__button:hover {
+  background-color: white;
+  color: #1A1A25;
+}
+
+@media (max-width: 1000px) {
+  .eight .contain .left {
+    width: 100%;
+    order: 2;
+  }
+  .eight .contain .right {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .eight .contain .right__h3 {
+    font-size: 22px;
+  }
+}
+.nine .contain {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nine .contain__h3 {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 800;
+}
+.nine .contain .card1 {
+  width: 24%;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.nine .contain .card1 .bottom {
+  padding-left: 0;
+  padding: 10px 5px;
+}
+.nine .contain .card1 .bottom h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.nine .contain .card1 .bottom li {
+  display: flex;
+  gap: 5px;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+}
+.nine .contain .card1 .bottom li b {
+  font-weight: 400;
+}
+.nine .contain .card1 .bottom li span {
+  color: grey;
+}
+.nine .contain .card1 .bottom li:first-child {
+  border: none;
+}
+
+@media (max-width: 1000px) {
+  .nine .contain .card1 {
+    width: 32%;
+  }
+}
+@media (max-width: 730px) {
+  .nine .contain .card1 {
+    width: 49%;
+  }
+}
+@media (max-width: 350px) {
+  .nine .contain .card1 {
+    width: 100%;
+  }
+}
+.ten .contain {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.ten .contain__h3 {
+  font-size: 24px;
+  font-weight: 800;
+  width: 100%;
+}
+.ten .contain .card1 {
+  width: 16%;
+  font-size: 11px;
+}
+.ten .contain .card1 i {
+  color: #F99808;
+}
+.ten .contain .card1 span {
+  color: grey;
+}
+.ten .contain .card1 h4 {
+  font-weight: 700;
+  margin-top: 0;
+  margin-left: 10px;
+}
+.ten .contain .card1 p {
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .ten {
+    display: none;
+  }
+}
+footer {
+  background-color: #1A1A25;
+}
+footer .contain {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 14px;
+}
+footer .contain__links {
+  width: 18%;
+  padding-left: 0;
+  margin-top: 0;
+}
+footer .contain__links li {
+  color: #858FA4;
+}
+footer .contain__links li b {
+  color: white;
+}
+footer .contain__right {
+  width: 28%;
+  margin-top: 0;
+  padding-left: 0;
+}
+footer .contain__right input {
+  background-color: rgba(133, 143, 164, 0.1490196078);
+  border: none;
+  margin-right: 5px;
+  padding: 2px 10px;
+}
+footer .contain__right li {
+  margin-bottom: 10px;
+  color: #858FA4;
+}
+footer .contain__right li b {
+  color: white;
+}
+footer .contain__right li span {
+  color: #4B7EE8;
+}
+footer .contain__right li button {
+  background-color: inherit;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+footer .contain__bottom {
+  padding-left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .contain__bottom li {
+  width: 24%;
+  color: #384255;
+  text-align: center;
+}
+footer .contain__bottom li i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+footer .contain__bottom li i:hover {
+  color: #4B7EE8;
+}
+footer .contain__bottom li button {
+  background-color: inherit;
+  border: 1px solid #858FA4;
+  border-radius: 4px;
+  padding: 4px 5px;
+  color: white;
+}
+footer .contain__bottom li button:hover {
+  background-color: white;
+  color: #1A1A25;
+}
+footer .contain__bottom li .first {
+  background-color: #384255;
+}
+footer .contain__bottom li img {
+  margin-right: 4px;
+}
+footer .contain__bottom li:first-child {
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  footer .contain__links {
+    width: 49%;
+  }
+  footer .contain__right {
+    width: 100%;
+  }
+  footer .contain__bottom {
+    flex-wrap: wrap;
+  }
+  footer .contain__bottom li {
+    margin: 4px 0;
+    text-align: start;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

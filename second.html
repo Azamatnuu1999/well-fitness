@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/css/uikit.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- SHOWCASE -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="navbar__logo">
+                <img src="./assets/media/2654418098080.png" alt="not">
+            </a>
+            <select name="select" id="select" class="navbar__select">
+                <option value="Москва">Москва</option>
+                <option value="Путербург">Путербург</option>
+                <option value="Астана">Астана</option>
+            </select>
+            <ul class="navbar__right">
+                <li>
+                    <a href="#">Для дилеров</a>
+                    <button>Become a Partner</button>
+                </li>
+                <li>
+                    <a href="tel:+7 (800) 000-00-00">+7 (800) 000-00-00 <span>MCK</span></a>
+                    <a href="#" class="red">Заказать звонок</a>
+                </li>
+                <li>
+                    <a href="#">Войти <i class="fa-solid fa-user"></i></a>
+                </li>
+            </ul>
+            <ul class="navbar__res">
+                <li class="search"><a href="#"><i class="fa-solid fa-search"></i></a></li>
+                <li class="red"><a href="#"><img src="./assets/media/сравнение.png" alt=""></a></li>
+                <li class="red"><a href="#"><img src="./assets/media/выбранные.png" alt=""></a></li>
+                <li class="search"><a href="#"><img src="./assets/media/cart.png" alt=""></a></li>
+                <li class="bars"><label for="checkbox"><i class="fa-solid fa-bars fa-2x"></i></label></li>
+            </ul>
+            <input type="checkbox" class="navbar__check" id="checkbox">
+            <ul class="navbar__responsive">
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Поддержка</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Где купить</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li>
+                    <a href="#">Для дилеров</a>
+                </li>
+                <li>
+                    <a href="tel:+7 (800) 000-00-00">+7 (800) 000-00-00 <span>MCK</span></a>
+                </li>
+                <li>
+                    <a href="#">Войти <i class="fa-solid fa-user"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="center">
+                <button class="center__button">
+                    <img src="./assets/media/menu (1) 1.png" alt="">
+                    Каталог
+                </button>
+                <a href="#" class="center__a"><i class="fa-solid fa-search" style="font-size: 18px; margin-top: 8px;"></i></a>
+                <nav class="center__nav">
+                    <ul>
+                        <li><a href="#">Бренды</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Поддержка</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Где купить</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><img src="./assets/media/сравнение.png" alt=""></a></li>
+                        <li><a href="#"><img src="./assets/media/выбранные.png" alt=""></a></li>
+                        <li><a href="#"><img src="./assets/media/cart.png" alt=""></a></li>
+                        <li class="bars"><label for="checkbox"><i class="fa-solid fa-bars fa-2x"></i></label></li>
+                    </ul>
+                </nav>
+            </div>
+        <div class="bottom">
+                <ul class="bottom__ul">
+                    <li><select name="sel" id="sel">
+                        <option value="Для дома">Для дома</option>
+                        <option value="Для фитнес клуба">Для фитнес клуба</option>
+                    </select></li>
+                    <li><select name="sel" id="sel">
+                        <option value="Для фитнес клуба">Для фитнес клуба</option>
+                        <option value="Для дома">Для дома</option>
+                    </select></li>
+                </ul>
+            </div>
+    </header>
+
+    <section class="nine">
+        <div class="contain">
+            <h3 class="contain__h3">
+                Для фитнес клубов
+            </h3>
+            <div class="card1">
+                <div class="img">
+                    <img src="./assets/media/Rectangle 223.png" alt="">
+                </div>
+                <ul class="bottom">
+                    <li><h3>Кардиотренажеры</h3></li>
+                    <li><b>Беговые дорожки</b><span>57</span></li>
+                    <li><b>Эллиптические тренажеры</b><span>23</span></li>
+                    <li><b>Велотренажеры</b><span>12</span></li>
+                    <li><b>Cтепперы</b><span>10</span></li>
+                    <li><b>Гребные тренажеры</b><span>15</span></li>
+                    <li><b>Сайклинг</b><span>20</span></li>
+                    <li><b>Горнолыжные тренажеры</b><span>18</span></li>
+                </ul>
+            </div>
+            <div class="card1">
+                <div class="img">
+                    <img src="./assets/media/Rectangle 223 (1).png" alt="">
+                </div>
+                <ul class="bottom">
+                    <li><h3>Силовые тренажеры   </h3></li>
+                    <li><b>Мультистанции </b><span>57</span></li>
+                    <li><b>Рамы и комплексы</b><span>23</span></li>
+                    <li><b>Скамьи</b><span>12</span></li>
+                </ul>
+            </div>
+            <div class="card1">
+                <div class="img">
+                    <img src="./assets/media/Rectangle 223 (2).png" alt="">
+                </div>
+                <ul class="bottom">
+                    <li><h3>Уличные виды спорта</h3></li>
+                    <li><b>Батуты </b><span>57</span></li>
+                    <li><b>Баскетбол </b><span>23</span></li>
+                    <li><b>Футбол</b><span>12</span></li>
+                </ul>
+            </div>
+            <div class="card1">
+                <div class="img">
+                    <img src="./assets/media/Rectangle 223 (3).png" alt="">
+                </div>
+                <ul class="bottom">
+                    <li><h3>Свободные веса</h3></li>
+                    <li><b>Гантели и гантельные ряды</b><span>57</span></li>
+                    <li><b>Гири</b><span>23</span></li>
+                    <li><b>Диски и грифы</b><span>12</span></li>
+                    <li><b>Стойки и хранение</b><span>10</span></li>
+                </ul>
+            </div>
+            <div class="card1">
+                <div class="img">
+                    <img src="./assets/media/Rectangle 223 (4).png" alt="">
+                </div>
+                <ul class="bottom">
+                    <li><h3>Игровые столы</h3></li>
+                    <li><b>Аэрохоккей</b><span>57</span></li>
+                    <li><b>Настольный футбол</b><span>23</span></li>
+                </ul>
+            </div>
+            <div class="card1">
+                <div class="img">
+                    <img src="./assets/media/Rectangle 223 (5).png" alt="">
+                </div>
+                <ul class="bottom">
+                    <li><h3>Массажное оборудование</h3></li>
+                    <li><b>Массажные кресла</b><span>57</span></li>
+                    <li><b>Эллиптические тренажеры</b><span>23</span></li>
+                    <li><b>Массажные столы</b><span>12</span></li>
+                    <li><b>Cтепперы</b><span>10</span></li>
+                    <li><b>Гребные тренажеры</b><span>15</span></li>
+                    <li><b>Массажные столы</b><span>20</span></li>
+                    <li><b>Горнолыжные тренажеры</b><span>18</span></li>
+                </ul>
+            </div>
+            <div class="card1">
+                <div class="img">
+                    <img src="./assets/media/Rectangle 223 (6).png" alt="">
+                </div>
+                <ul class="bottom">
+                    <li><h3>Фитнес аксессуары</h3></li>
+                    <li><b>Йога и пилатес</b><span>57</span></li>
+                    <li><b>Фитнес аксессуары</b><span>23</span></li>
+                    <li><b>Эспандеры</b><span>12</span></li>
+                    <li><b>Массажные аксессуары</b><span>10</span></li>
+                    <li><b>Тяги и рукоятки</b><span>15</span></li>
+                </ul>
+            </div>
+            <div class="card1">
+                <div class="img">
+                    <img src="./assets/media/Rectangle 223 (7).png" alt="">
+                </div>
+                <ul class="bottom">
+                    <li><h3>Функциональный тренинг</h3></li>
+                    <li><b>Функциональные петли Variosling</b><span>57</span></li>
+                    <li><b>Тренировочный комплекс HyGear</b><span>23</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOURTH -->
+    <section class="fourth">
+        <div class="contain">
+            <h2 class="contain__h3">
+                Идеи и подборки
+            </h2>
+            <div uk-slider class="slider">
+                <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@">
+                    <li class="left">
+                        <div>
+                            <img src="./assets/media/баннер 1.png" alt="not">
+                        </div>
+                    </li>
+                    <li class="card1">
+                        <div>
+                            <img src="./assets/media/баннер 2.png" alt="">
+                        </div>
+                    </li>
+                    <li class="card1">
+                        <div>
+                            <img src="./assets/media/баннер 2 (1).png" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+            <button class="contain__button">
+                Полная подборка
+            </button>
+        </div>
+    </section>
+
+    <!-- THIRD -->
+    <section class="third">
+        <div class="contain">
+            <ul class="contain__ul">
+                <li><a href="#"><b>Акция</b></a></li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Мы рекомендуем</a></li>
+            </ul>
+            <div class="main">
+                <div uk-slider class="slider">
+                    <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@">
+                        <li>
+                            <div class="card1">
+                                <div class="img">
+                                    <img src="./assets/media/Rectangle.png" alt="">
+                                    <ul class="top">
+                                        <li><img src="./assets/media/Group 735.png" alt=""></li>
+                                        <li><img src="./assets/media/ico2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">В наличии <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt=""></a>
+                                    <a href="#">Есть в шоу-руме</a>
+                                    <p>Беговая дорожка CardioPower S35</p>
+                                    <span>Рейтинг</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <ul>
+                                        <li>
+                                            <b>1 134 900 ₽</b><br>
+                                            <del>1 134 900 ₽</del>
+                                        </li>
+                                        <li>
+                                            <button>
+                                                <img src="./assets/media/Group 738.png" alt="">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="img">
+                                    <img src="./assets/media/Rectangle (1).png" alt="">
+                                    <ul class="top">
+                                        <li><img src="./assets/media/Group 735.png" alt=""></li>
+                                        <li><img src="./assets/media/ico2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">В наличии <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 37.png" alt=""></a>
+                                    <a href="#">Есть в шоу-руме</a>
+                                    <p>Беговая дорожка CardioPower T20 Plus</p>
+                                    <span>Рейтинг</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <ul>
+                                        <li>
+                                            <b>34 900 ₽</b><br>
+                                            <del>34 900 ₽</del>
+                                        </li>
+                                        <li>
+                                            <button>
+                                                <img src="./assets/media/Group 738.png" alt="">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="img">
+                                    <img src="./assets/media/Rectangle (2).png" alt="">
+                                    <ul class="top">
+                                        <li><img src="./assets/media/Group 735.png" alt=""></li>
+                                        <li><img src="./assets/media/ico2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">В наличии <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt=""></a>
+                                    <a href="#">Есть в шоу-руме</a>
+                                    <p>Беговая дорожка CardioPower T20 Plus</p>
+                                    <span>Рейтинг</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <ul>
+                                        <li>
+                                            <b>1 134 900 ₽</b><br>
+                                            <del>1 134 900 ₽</del>
+                                        </li>
+                                        <li>
+                                            <button>
+                                                <img src="./assets/media/Group 738.png" alt="">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="img">
+                                    <img src="./assets/media/Rectangle (3).png" alt="">
+                                    <ul class="top">
+                                        <li><img src="./assets/media/Group 735.png" alt=""></li>
+                                        <li><img src="./assets/media/ico2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">В наличии <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt=""></a>
+                                    <a href="#">Есть в шоу-руме</a>
+                                    <p>Беговая дорожка CardioPower S35</p>
+                                    <span>Рейтинг</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <ul>
+                                        <li>
+                                            <b>1 134 900 ₽</b><br>
+                                            <del>1 134 900 ₽</del>
+                                        </li>
+                                        <li>
+                                            <button>
+                                                <img src="./assets/media/Group 738.png" alt="">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="img">
+                                    <img src="./assets/media/Rectangle (4).png" alt="">
+                                    <ul class="top">
+                                        <li><img src="./assets/media/Group 735.png" alt=""></li>
+                                        <li><img src="./assets/media/ico2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">В наличии <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt=""></a>
+                                    <a href="#">Есть в шоу-руме</a>
+                                    <p>Беговая дорожка CardioPower S35</p>
+                                    <span>Рейтинг</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <ul>
+                                        <li>
+                                            <b>1 134 900 ₽</b><br>
+                                            <del>1 134 900 ₽</del>
+                                        </li>
+                                        <li>
+                                            <button>
+                                                <img src="./assets/media/Group 738.png" alt="">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card1">
+                                <div class="img">
+                                    <img src="./assets/media/Rectangle.png" alt="">
+                                    <ul class="top">
+                                        <li><img src="./assets/media/Group 735.png" alt=""></li>
+                                        <li><img src="./assets/media/ico2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">В наличии <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt=""></a>
+                                    <a href="#">Есть в шоу-руме</a>
+                                    <p>Беговая дорожка CardioPower S35</p>
+                                    <span>Рейтинг</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <ul>
+                                        <li>
+                                            <b>1 134 900 ₽</b><br>
+                                            <del>1 134 900 ₽</del>
+                                        </li>
+                                        <li>
+                                            <button>
+                                                <img src="./assets/media/Group 738.png" alt="">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="img">
+                                    <img src="./assets/media/Rectangle (1).png" alt="">
+                                    <ul class="top">
+                                        <li><img src="./assets/media/Group 735.png" alt=""></li>
+                                        <li><img src="./assets/media/ico2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">В наличии <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 37.png" alt=""></a>
+                                    <a href="#">Есть в шоу-руме</a>
+                                    <p>Беговая дорожка CardioPower T20 Plus</p>
+                                    <span>Рейтинг</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <ul>
+                                        <li>
+                                            <b>34 900 ₽</b><br>
+                                            <del>34 900 ₽</del>
+                                        </li>
+                                        <li>
+                                            <button>
+                                                <img src="./assets/media/Group 738.png" alt="">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="img">
+                                    <img src="./assets/media/Rectangle (2).png" alt="">
+                                    <ul class="top">
+                                        <li><img src="./assets/media/Group 735.png" alt=""></li>
+                                        <li><img src="./assets/media/ico2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">В наличии <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt=""></a>
+                                    <a href="#">Есть в шоу-руме</a>
+                                    <p>Беговая дорожка CardioPower T20 Plus</p>
+                                    <span>Рейтинг</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <ul>
+                                        <li>
+                                            <b>1 134 900 ₽</b><br>
+                                            <del>1 134 900 ₽</del>
+                                        </li>
+                                        <li>
+                                            <button>
+                                                <img src="./assets/media/Group 738.png" alt="">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="img">
+                                    <img src="./assets/media/Rectangle (3).png" alt="">
+                                    <ul class="top">
+                                        <li><img src="./assets/media/Group 735.png" alt=""></li>
+                                        <li><img src="./assets/media/ico2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">В наличии <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt=""></a>
+                                    <a href="#">Есть в шоу-руме</a>
+                                    <p>Беговая дорожка CardioPower S35</p>
+                                    <span>Рейтинг</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <ul>
+                                        <li>
+                                            <b>1 134 900 ₽</b><br>
+                                            <del>1 134 900 ₽</del>
+                                        </li>
+                                        <li>
+                                            <button>
+                                                <img src="./assets/media/Group 738.png" alt="">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="img">
+                                    <img src="./assets/media/Rectangle (4).png" alt="">
+                                    <ul class="top">
+                                        <li><img src="./assets/media/Group 735.png" alt=""></li>
+                                        <li><img src="./assets/media/ico2.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#">В наличии <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt="">
+                                    <img src="./assets/media/Ellipse 35.png" alt=""></a>
+                                    <a href="#">Есть в шоу-руме</a>
+                                    <p>Беговая дорожка CardioPower S35</p>
+                                    <span>Рейтинг</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <ul>
+                                        <li>
+                                            <b>1 134 900 ₽</b><br>
+                                            <del>1 134 900 ₽</del>
+                                        </li>
+                                        <li>
+                                            <button>
+                                                <img src="./assets/media/Group 738.png" alt="">
+                                                Купить
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+            </div>
+            <button class="contain__button">
+                Все категории
+            </button>
+        </div>
+    </section>
+
+    <section class="ten">
+        <div class="contain">
+            <h3 class="contain__h3">
+                Вы смотрели
+            </h3>
+            <div class="card1">
+                <img src="./assets/media/Rectangle1.png" alt="">
+                <br>
+                <p>Беговая дорожка CardioPower S35 <br>
+                <span>Рейтинг</span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <h4>34 900 ₽</h4>
+                </p>
+            </div>
+            <div class="card1">
+                <img src="./assets/media/Rectangle (12).png" alt="">
+                <br>
+                <p>Беговая дорожка CardioPower T20 Plus <br>
+                <span>Рейтинг</span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <h4>34 900 ₽</h4>
+               </p>
+            </div>
+            <div class="card1">
+                <img src="./assets/media/Rectangle (11).png" alt="">
+                <br>
+                <p>Беговая дорожка CardioPower S35 <br>
+                <span>Рейтинг</span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <h4>34 900 ₽</h4>
+            </p>
+            </div>
+            <div class="card1">
+                <img src="./assets/media/Rectangle (13).png" alt="">
+                <br>
+                <p>Беговая дорожка CardioPower S35 <br>
+                <span>Рейтинг</span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <h4>34 900 ₽</h4>
+            </p>
+            </div>
+            <div class="card1">
+                <img src="./assets/media/Rectangle (12).png" alt="">
+                <br>
+                <p>Беговая дорожка CardioPower T20 Plus <br>
+                <span>Рейтинг</span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <h4>34 900 ₽</h4>
+            </p>
+            </div>
+            <div class="card1">
+                <img src="./assets/media/Rectangle (11).png" alt="">
+                <br>
+                <p>Беговая дорожка CardioPower S35 <br>
+                <span>Рейтинг</span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <h4>34 900 ₽</h4>
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="contain">
+            <ul class="contain__links">
+                <li><b>Каталог</b></li>
+                <li><a href="#">Для дома</a></li>
+                <li><a href="#">Для фитнес клубов</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Идеи и подборки </a></li>
+                <li><a href="#">Наши бренды</a></li>
+                <li><a href="#">Новинки</a></li>
+            </ul>
+            <ul class="contain__links">
+                <li><b>Поддержка</b></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Условия возврата</a></li>
+                <li><a href="#">Сервисная заявка</a></li>
+                <li><a href="#">Обслуживание фитнес клубов </a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Инструкции</a></li>
+                <li><a href="#">Гарантия</a></li>
+            </ul>
+            <ul class="contain__links">
+                <li><b>Услуги</b></li>
+                <li><a href="#">3D проект</a></li>
+                <li><a href="#">Консалтинг</a></li>
+                <li><a href="#">Бизнес планирование </a></li>
+                <li><a href="#">Лизинг</a></li>
+                <li><a href="#">Trade-IN</a></li>
+                <li><a href="#">В рассрочку</a></li>
+            </ul>
+            <ul class="contain__links">
+                <li><b>О компании</b></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Наша миссия </a></li>
+                <li><a href="#">Наша команда </a></li>
+                <li><a href="#">Наши проекты </a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Где купить</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="contain__right">
+                <li><input type="text" placeholder="Подписаться на рассылку"><button><i class="fa-brands fa-telegram"></i></button></li>
+                <li>
+                    <a href="tel:+7 (000) 000-00-00">+7 (000) 000-00-00 для Москвы</a><br>
+                    <a href="tel: 8 (800) 000-00-00">8 (800) 000-00-00  для России</a>
+                </li>
+                <li>
+                    <a href="mailto:wellfitness@wellfit.ru">wellfitness@wellfit.ru</a><br>
+                    <span style="color: white;">Написать</span>
+                </li>
+                <li>
+                    <span><a href="#">Политика конфиденциальности</a></span><br>
+                    <span><a href="#">Публичная офферта</a></span>
+                </li>
+            </ul>
+            <ul class="contain__bottom">
+                <li><a href="index.html"><img src="./assets/media/2654418098080.png" alt=""></a> <br> © WellFitness. 2007 Все права защищены</li>
+                <li><i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-youtube"></i></li>
+                <li><button class="first">Become a Partner</button>
+                <button>Для дилеров</button></li>
+                <li>
+                    <a href="#"><img src="./assets/media/symbols 1.png" alt=""></a>
+                    <a href="#"><img src="./assets/media/mastercard 1.png" alt=""></a>
+                    <a href="#"><img src="./assets/media/symbols (1) 1.png" alt=""></a>
+                    <a href="#"><img src="./assets/media/paypal-logo 1.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

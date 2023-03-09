@@ -1,0 +1,108 @@
+footer{
+    background-color: $toqkok;
+    .contain{
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: white;
+        font-size: 14px;
+        &__links{
+            width: 18%;
+            padding-left: 0;
+            margin-top: 0;
+            li{
+                color: #858FA4;
+                b{
+                    color: white;
+                }
+            }
+        }
+        &__right{
+            width: 28%;
+            margin-top: 0;
+            padding-left: 0;
+            input{
+                background-color: #858FA426;
+                border: none;
+                margin-right: 5px;
+                padding: 2px 10px;
+            }
+            li{
+                margin-bottom: 10px;
+                color: #858FA4;
+                b{
+                    color: white;
+                }
+                span{
+                    color: #4B7EE8;
+                }
+                button{
+                    background-color: inherit;
+                    border: none;
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+        }
+        &__bottom{
+            padding-left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 24%;
+                color: #384255;
+                text-align: center;
+                i{
+                    font-size: 24px;
+                    margin-right: 10px;
+                }
+                i:hover{
+                    color: #4B7EE8;
+                }
+                button{
+                    background-color: inherit;
+                    border: 1px solid #858FA4;
+                    border-radius: 4px;
+                    padding: 4px 5px;
+                    color: white;
+                }
+                button:hover{
+                    background-color: white;
+                    color: $toqkok;
+                }
+                .first{
+                    background-color: #384255;
+                }
+                img{
+                    margin-right: 4px;
+                }
+            }
+            li:first-child{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    footer{
+        .contain{
+            &__links{
+                width: 49%;
+            }
+            &__right{
+                width: 100%;
+            }
+            &__bottom{
+                flex-wrap: wrap;
+                li{
+                    margin: 4px 0;
+                    text-align: start;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

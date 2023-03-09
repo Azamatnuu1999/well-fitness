@@ -1,0 +1,68 @@
+.five{
+    .contain{
+        &__h3{
+            font-size: 24px;
+            font-weight: 800;
+        }
+        &__ul{
+            display: flex;
+            gap: 12px;
+            padding-left: 0;
+            font-size: 13px;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .card1{
+                width: 19.5%;
+                padding: 10px;
+                margin: 3px 0;
+                cursor: pointer;
+            }
+            .card1:hover{
+                box-shadow: 0 0 9px grey;
+            }
+        }
+        &__button{
+            background-color: inherit;
+            color: red;
+            border: 1px solid red;
+            border-radius: 4px;
+            padding: 6px 12px;
+        }
+        &__button:hover{
+            background-color: red;
+            color: white;
+        }
+    }
+}
+
+@media(max-width:700px){
+    .five{
+        .contain{
+            &__ul{
+                flex-wrap: wrap;
+            }
+            .main{
+                .card1{
+                    width: 24.5%;
+                }
+                .card1:nth-child(13), .card1:nth-child(14), .card1:nth-child(15){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media(max-width:400px){
+    .five{
+        .contain{
+            .main{
+                .card1{
+                    width: 32.5%;
+                }
+            }
+        }
+    }
+}

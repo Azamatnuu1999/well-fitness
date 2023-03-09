@@ -1,0 +1,37 @@
+.ten{
+    .contain{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        &__h3{
+            font-size: 24px;
+            font-weight: 800;
+            width: 100%;
+        }
+        .card1{
+            width: 16%;
+            font-size: 11px;
+            i{
+                color: #F99808;
+            }
+            span{
+                color: grey;
+            }
+            h4{
+                font-weight: 700;
+                margin-top: 0;
+                margin-left: 10px;
+            }
+            p{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .ten{
+        display: none;
+    }
+}
